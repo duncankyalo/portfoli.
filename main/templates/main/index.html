@@ -1,0 +1,33 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="home">
+    <div class="content fade-in">
+        <h3 class="fade-in">Hello, It's Me</h3>
+        <h1 class="slide-in">Duncan Kyalo</h1>
+        <h3 class="typewriter-line">
+    And I'm a <span class="typewriter-text">Data Scientist / Software Engineer</span>
+</h3>
+        <p class="fade-delay">
+            I design intelligent systems that transform complex data into actionable insight.  
+            I specialize in AI, software development, and climate modeling that enable  
+            smarter, more resilient decision-making.
+        </p>
+
+        <a href="{% static 'main/files/Resume.pdf' %}" class="btn" download>Download CV</a>
+
+        <div class="socials">
+            <a href="https://facebook.com/DuncanKivindyo" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/KivindyoDuncan" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/duncan_kivindyo" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/in/duncankivindyo" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/duncankyalo" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+
+    <div class="image-box slide-in">
+        <img src="{% static 'main/images/1.png' %}" alt="Profile">
+    </div>
+</section>
+{% endblock %}

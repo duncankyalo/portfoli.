@@ -1,0 +1,34 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="projects page-section">
+    <h1 class="section-title">Projects</h1>
+    <p class="section-intro">
+        A selection of work combining AI, data analytics, and software engineering for real-world impact.
+    </p>
+
+    <div class="project-grid">
+        <div class="project-card">
+            <img src="{% static 'main/images/project1.jpg' %}" alt="Project 1">
+            <h3>Disaster Forecasting System</h3>
+            <p>Machine learning-based flood and drought prediction for Taita Taveta County using climate data and satellite imagery.</p>
+            <a href="https://github.com/duncankyalo/disaster-forecast" target="_blank" class="btn">View on GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <img src="{% static 'main/images/project2.jpg' %}" alt="Project 2">
+            <h3>Business Analytics Dashboard</h3>
+            <p>Interactive Power BI and Django dashboard for tracking company performance and automating monthly reports.</p>
+            <a href="https://github.com/duncankyalo/business-dashboard" target="_blank" class="btn">View on GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <img src="{% static 'main/images/project3.jpg' %}" alt="Project 3">
+            <h3>AI Chat Assistant</h3>
+            <p>Conversational agent built with Python and NLP libraries to automate FAQs and customer support for SMEs.</p>
+            <a href="https://github.com/duncankyalo/ai-chat-assistant" target="_blank" class="btn">View on GitHub</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
